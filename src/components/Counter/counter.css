@@ -1,0 +1,17 @@
+.counter {
+  margin-top: 50px;
+}
+
+.btn-counter {
+  padding: 10px 15px;
+  margin: 0 10px;
+  max-width: 110px;
+  width: 100%;
+  border: none;
+  background-color: #61b4cf;
+  color: aliceblue;
+  border-radius: 4px;
+}
+.btn-counter:hover {
+  background-color: #216278;
+}
