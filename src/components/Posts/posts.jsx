@@ -15,7 +15,12 @@ export const Posts = () => {
   }
 
   const handleInputChange = (e) => {
-    dispatch(setPostIdInput(e.target.value));
+    const value = e.target.value
+    if ((Number(value) > 0 && Number.isInteger(Number(value)))) { 
+      dispatch(setPostIdInput(value));
+    } else {
+      alert("Пожалуйста, введите целое число.");
+    }
   };
 
   return (
